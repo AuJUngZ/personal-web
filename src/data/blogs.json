@@ -1,0 +1,70 @@
+{
+  "posts": [
+    {
+      "slug": "complete-markdown-guide",
+      "title": "Complete Markdown Guide: Everything You Need to Know",
+      "description": "A comprehensive guide covering all Markdown features including headers, links, images, tables, code blocks, and more. Perfect for beginners and experienced writers alike.",
+      "date": "2024-12-01",
+      "author": "Natthaphong Thepphithak",
+      "tags": ["markdown", "tutorial", "documentation", "writing"],
+      "coverImage": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=800&h=400&fit=crop",
+      "readingTime": "10 min read",
+      "published": false
+    },
+    {
+      "slug": "getting-started-with-docker",
+      "title": "Getting Started with Docker: A Practical Guide",
+      "description": "Learn the fundamentals of Docker containerization, from basic concepts to running your first container. Includes hands-on examples and best practices.",
+      "date": "2024-11-15",
+      "author": "Natthaphong Thepphithak",
+      "tags": ["docker", "devops", "containers", "tutorial"],
+      "coverImage": "https://images.unsplash.com/photo-1605745341112-85968b19335b?w=800&h=400&fit=crop",
+      "readingTime": "8 min read",
+      "published": false
+    },
+    {
+      "slug": "kubernetes-fundamentals",
+      "title": "Kubernetes Fundamentals for DevOps Engineers",
+      "description": "Explore Kubernetes architecture, deployments, services, and scaling strategies. Essential knowledge for modern cloud-native applications.",
+      "date": "2024-11-01",
+      "author": "Natthaphong Thepphithak",
+      "tags": ["kubernetes", "devops", "cloud", "orchestration"],
+      "coverImage": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800&h=400&fit=crop",
+      "readingTime": "12 min read",
+      "published": false
+    },
+    {
+      "slug": "cicd-best-practices",
+      "title": "CI/CD Best Practices for Modern Development",
+      "description": "Implement robust CI/CD pipelines with Jenkins, GitHub Actions, and ArgoCD. Learn automation strategies that boost team productivity.",
+      "date": "2024-10-20",
+      "author": "Natthaphong Thepphithak",
+      "tags": ["cicd", "devops", "automation", "jenkins"],
+      "coverImage": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=800&h=400&fit=crop",
+      "readingTime": "9 min read",
+      "published": false
+    },
+    {
+      "slug": "terraform-infrastructure-as-code",
+      "title": "Terraform: Infrastructure as Code Made Simple",
+      "description": "Master Terraform for managing cloud infrastructure. From basic resources to complex multi-cloud deployments with reusable modules.",
+      "date": "2024-10-05",
+      "author": "Natthaphong Thepphithak",
+      "tags": ["terraform", "iac", "devops", "cloud"],
+      "coverImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=400&fit=crop",
+      "readingTime": "11 min read",
+      "published": false
+    },
+    {
+      "slug": "aws-cloud-architecture",
+      "title": "Designing Scalable AWS Cloud Architecture",
+      "description": "Build resilient and cost-effective solutions on AWS. Covers VPC design, EC2 optimization, and serverless patterns.",
+      "date": "2024-09-15",
+      "author": "Natthaphong Thepphithak",
+      "tags": ["aws", "cloud", "architecture", "devops"],
+      "coverImage": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&h=400&fit=crop",
+      "readingTime": "14 min read",
+      "published": false
+    }
+  ]
+}
