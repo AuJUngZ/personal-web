@@ -180,7 +180,7 @@ export default function BlogList() {
       {/* Blog Posts Grid */}
       {paginatedPosts.length > 0 ? (
         <div className="grid gap-6 md:grid-cols-2">
-          {paginatedPosts.map((post, index) => (
+          {paginatedPosts.map((post) => (
             <Link key={post.slug} to={`/blog/${post.slug}`} className="group">
               <Card className="h-full overflow-hidden border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 py-0 gap-0">
                 {/* Cover Image */}

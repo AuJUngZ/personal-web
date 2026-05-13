@@ -1,13 +1,14 @@
 {
   "meta": {
-    "title": "Natthaphong Thepphithak - DevOps Engineer Portfolio"
+    "title": "Natthaphong Thepphithak | DevOps Engineer"
   },
   "header": {
-    "name": "Au",
+    "name": "Natthaphong Thepphithak",
     "links": [
-      { "label": "Skills", "href": "#skills" },
       { "label": "Experience", "href": "#experience" },
+      { "label": "Skills", "href": "#skills" },
       { "label": "Projects", "href": "#projects" },
+      { "label": "Education", "href": "#education" },
       { "label": "Contact", "href": "#contact" }
     ],
     "cta": {
@@ -16,12 +17,32 @@
     }
   },
   "hero": {
-    "name": "Natthaphong Thepphithak (Au)",
+    "name": "Natthaphong Thepphithak",
     "title": "DevOps Engineer",
-    "description": "B.Eng. in Computer Engineering from Chiang Mai University (First-Class Honors, GPAX 3.87). Passionate about building scalable CI/CD pipelines, cloud infrastructure, and DevSecOps practices. Currently empowering 13M+ users through SCB EASY mobile banking infrastructure.",
+    "eyebrow": "Recruiter-ready portfolio",
+    "location": "Bangkok, Thailand",
+    "description": "DevOps engineer building resilient delivery platforms across cloud infrastructure, CI/CD, and DevSecOps. I help teams ship faster, standardize workflows, and improve production readiness without slowing developers down.",
     "actions": [
-      { "label": "Let's Connect", "href": "#contact", "primary": true },
+      { "label": "Contact Me", "href": "#contact", "primary": true },
       { "label": "View Projects", "href": "#projects", "primary": false }
+    ],
+    "highlights": [
+      {
+        "label": "Current role",
+        "value": "DevOps Engineer at SCB TechX"
+      },
+      {
+        "label": "Focus",
+        "value": "CI/CD, cloud infrastructure, DevSecOps"
+      },
+      {
+        "label": "Education",
+        "value": "B.Eng. Computer Engineering, First-Class Honors"
+      },
+      {
+        "label": "Consulting",
+        "value": "Freelance advisor and instructor"
+      }
     ],
     "image": {
       "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAGmKZV9KHWiuMpMieV3ciLZ9y8ngWWIwUSlRytSuu-hCUEvE7mpIzCaVtZ2IRzKcJjQjnuRzsopdjakjOH5l9vPfLr35lm1jNIHVuEq2bWbiFuzV4aLtCvl9OCYsRxXjXFPgouWwYShNe-fYvarQBLsbmEWS8eGBZRDn5L00PkcE3EiO0Jqcuj0xhOmtteG-z7ms1CgWcl-he7E4Fy_aV_NrVuK3GD8K1opFio1ziqqFRX67qGmsWXaQ8_PVznU43P077WHzQmf0gN",
@@ -29,144 +50,164 @@
     }
   },
   "skills": {
-    "title": "Technical Skills",
-    "description": "A comprehensive set of DevOps, cloud, and development capabilities.",
+    "title": "Core Expertise",
+    "description": "Hands-on across infrastructure, automation, observability, and developer enablement.",
     "categories": [
       {
-        "title": "Core DevOps & Cloud",
+        "title": "Cloud & Infrastructure",
+        "items": [
+          { "name": "Microsoft Azure" },
+          { "name": "AWS" },
+          { "name": "GCP" },
+          { "name": "Terraform" },
+          { "name": "Hybrid/On-Prem" }
+        ]
+      },
+      {
+        "title": "DevOps & Delivery",
         "items": [
           { "name": "Docker" },
           { "name": "Kubernetes" },
+          { "name": "Helm" },
+          { "name": "Kustomize" },
           { "name": "Jenkins" },
+          { "name": "GitHub Actions" },
+          { "name": "GitLab CI" },
           { "name": "ArgoCD" },
-          { "name": "Terraform" },
-          { "name": "Azure" },
-          { "name": "AWS" },
-          { "name": "GCP" }
+          { "name": "GitOps" },
+          { "name": "DevSecOps" }
         ]
       },
       {
-        "title": "Programming & Scripting",
+        "title": "Monitoring & Observability",
+        "items": [
+          { "name": "Prometheus" },
+          { "name": "Grafana" },
+          { "name": "ELK Stack" },
+          { "name": "Logging" },
+          { "name": "Metrics" },
+          { "name": "Alerting" }
+        ]
+      },
+      {
+        "title": "Programming & Automation",
         "items": [
           { "name": "Python" },
-          { "name": "Groovy" },
+          { "name": "Go" },
           { "name": "TypeScript" },
-          { "name": "Golang" },
-          { "name": "Java" }
+          { "name": "Groovy" },
+          { "name": "Java" },
+          { "name": "Bash" }
         ]
       },
       {
-        "title": "Web Development",
+        "title": "Data & Querying",
         "items": [
-          { "name": "React" },
-          { "name": "Next.js" },
-          { "name": "Vue.js" },
-          { "name": "Flutter" },
-          { "name": "NestJS" },
-          { "name": "Elysia" }
-        ]
-      },
-      {
-        "title": "Databases & Tools",
-        "items": [
-          { "name": "PostgreSQL" },
           { "name": "MySQL" },
+          { "name": "PostgreSQL" },
           { "name": "MongoDB" },
-          { "name": "Git" },
-          { "name": "N8n" }
-        ]
-      },
-      {
-        "title": "Project & Collaboration Tools",
-        "items": [
-          { "name": "Jira" },
-          { "name": "Confluence" },
-          { "name": "Microsoft Teams" }
+          { "name": "SQL" }
         ]
       }
     ]
   },
   "experience": {
-    "title": "Work Experience",
-    "description": "My professional journey and key contributions in DevOps and software development.",
+    "title": "Professional Experience",
+    "description": "Building delivery systems, infrastructure, and developer workflows with a strong bias for reliability and speed.",
     "jobs": [
       {
         "role": "DevOps Engineer",
         "company": "SCB TechX CO., LTD.",
+        "location": "Bangkok, Thailand",
         "period": "Jun 2025 - Present",
-        "icon": "apartment",
+        "summary": "Supporting large-scale banking delivery with standardized pipelines and cloud infrastructure for production-critical systems.",
         "achievements": [
-          "Act as one of four DevOps engineers responsible for CI/CD for SCB EASY mobile banking application, serving 13M+ active users.",
-          "Design, maintain, and optimize end-to-end CI/CD pipelines integrating DevSecOps practices and significantly reducing execution time.",
-          "Implemented an AI-agent–driven pipeline to analyze CVEs in base images and recommend remediation.",
-          "Manage Azure infrastructure deploying microservices to AKS and provisioning supporting services via Terraform.",
-          "Contribute to migration of source repositories from GitLab to GitHub, enhancing CI/CD pipelines for multiple Git providers."
+          "Design, implement, maintain, and optimize end-to-end pipelines across init, build, test, security scan, and deploy stages to remove legacy bottlenecks and reduce execution time.",
+          "Manage Azure infrastructure with Terraform integrated into CI/CD pipelines for consistent, repeatable delivery.",
+          "Contributed to a large-scale GitLab-to-GitHub repository migration, refactoring and standardizing pipelines to support multiple Git providers without disrupting developer workflows.",
+          "Supported cross-cloud disaster recovery architecture by enhancing CI/CD pipelines for multi-cloud deployments and failover readiness."
         ]
       },
       {
         "role": "DevOps Consultant & Instructor",
-        "company": "Freelance",
-        "period": "2025 - Present",
-        "icon": "school",
+        "company": "Freelance (Fastwork)",
+        "location": "Remote / Part-time",
+        "period": "Jan 2025 - Present",
+        "summary": "Helping software teams improve delivery maturity through consulting, training, and architecture guidance.",
         "achievements": [
-          "Provide DevOps consulting for small to mid-sized teams, focusing on CI/CD pipeline design using Jenkins, GitHub/GitLab, Docker, and Kubernetes.",
-          "Design and implement containerized deployment workflows on cloud platforms emphasizing scalability and automation.",
-          "Deliver training and hands-on workshops on Docker, Kubernetes, and DevOps practices."
+          "Provide DevOps consulting for small to mid-sized teams, designing CI/CD pipelines with Jenkins, GitHub, GitLab, Docker, and Kubernetes-based deployments.",
+          "Deliver private, hands-on Docker, Kubernetes, and DevOps training for developers and engineering teams.",
+          "Serve as a technical advisor for small-scale software projects, guiding architecture decisions and production-readiness improvements.",
+          "Maintain a consistent 5/5 client rating for quality, communication, and delivery."
         ]
       },
       {
-        "role": "DevOps & Fullstack Developer",
+        "role": "DevOps & Full-Stack Developer",
         "company": "Chiang Mai University's Faculty of Engineering",
+        "location": "Chiang Mai, Thailand",
         "period": "Aug 2023 - Mar 2025",
-        "icon": "business_center",
+        "summary": "Delivered internal academic systems while bridging software engineering and DevOps responsibilities.",
         "achievements": [
-          "Worked across multiple roles (Fullstack Developer, DevOps Engineer, Project Manager) to deliver high-impact solutions.",
-          "Developed a fully functional scholarship management system serving 500+ students and 50+ staff members yearly.",
-          "Implemented DevOps best practices, reducing deployment time by 80% and enhancing system reliability.",
-          "Demonstrated strong leadership by setting clear project goals and managing team dynamics."
+          "Built and shipped a scholarship management system for the Faculty of Engineering at Chiang Mai University.",
+          "Partnered with stakeholders to refine requirements, deliver key features, and improve application performance.",
+          "Introduced DevOps best practices that reduced deployment time by 80% and improved reliability.",
+          "Covered both software engineering and DevOps responsibilities to keep delivery on track."
         ]
       },
       {
         "role": "DevOps Engineer (Cooperative Education)",
         "company": "SCB TechX CO., LTD.",
+        "location": "Bangkok, Thailand",
         "period": "Jun 2024 - Oct 2024",
-        "icon": "work",
+        "summary": "Worked inside a core banking environment with enterprise-grade cloud and automation constraints.",
         "achievements": [
-          "Troubleshot, developed, and optimized Terraform modules for Azure Cloud within the SCB core banking project.",
-          "Designed and implemented automated configuration validation pipeline in Jenkins using Groovy and Python.",
-          "Proactively addressed unique cloud service challenges by crafting innovative solutions shared with cross-functional teams."
+          "Identified and resolved complex cloud-related issues through independent experimentation and solution design, then shared validated approaches with senior engineers and cross-functional teams.",
+          "Troubleshot, developed, and optimized Terraform modules for Azure within a core banking environment while aligning with enterprise standards.",
+          "Designed and implemented an automated configuration validation pipeline that reduced misconfigurations and improved deployment consistency.",
+          "Improved reliability by treating infrastructure quality gates as part of the delivery workflow, not a manual review step."
         ]
       },
       {
-        "role": "Full Stack Developer (Contract)",
+        "role": "Contract Full-Stack Developer",
         "company": "CMU PODD Centre",
+        "location": "Chiang Mai, Thailand",
         "period": "Aug 2023 - Feb 2024",
-        "icon": "volunteer_activism",
+        "summary": "Built a socially focused operations platform for volunteer coordination and field work.",
         "achievements": [
-          "Designed and implemented elderly registration and home visit coordination system using Line OA and Line LIFF.",
-          "Developed a user-friendly technology platform for nationwide volunteers.",
-          "Created a system with significant personal and social impact, streamlining volunteer operations."
+          "Designed and developed an elderly registration and home-visit coordination platform integrated with LINE Official Account and LIFF.",
+          "Built an intuitive, scalable system supporting nationwide volunteer networks.",
+          "Automated key workflows to streamline volunteer operations and improve coordination efficiency.",
+          "Improved responsiveness for field teams by simplifying the day-to-day flow from registration to follow-up visits."
         ]
       }
     ]
   },
   "projects": {
-    "title": "Personal Projects",
-    "description": "Showcasing my passion for building innovative solutions and problem-solving.",
+    "title": "Selected Projects",
+    "description": "Projects that show how I turn technical complexity into practical systems people can use.",
     "items": [
       {
         "title": "Screetner (Street Scanner)",
-        "description": "Senior project: End-to-end system for scanning local government assets. Mobile app captures asset data via video with cloud-based processing. Video pipeline extracts taxable signboards using YOLOv8 and visualizes on web platform. Auto-scaling processing on Azure for cost optimization.",
+        "description": "Built an end-to-end asset scanning system for local-government field work, from mobile data capture to cloud processing and dashboard visualization for tax assessment workflows.",
+        "highlights": [
+          "Mobile upload workflow for driving videos and background processing",
+          "Video pipeline for taxable signboard detection and asset visualization",
+          "Auto-scaling Azure processing service to control compute cost"
+        ],
         "tags": [
           "Python",
+          "OpenCV",
           "YOLOv8",
           "Azure",
           "Docker",
-          "Golang",
+          "Go",
+          "TypeScript",
+          "Elysia",
           "Next.js",
           "Flutter",
           "PostgreSQL",
-          "MongoDB"
+          "MongoDB",
+          "Redis"
         ],
         "link": {
           "label": "View Project",
@@ -174,9 +215,14 @@
         }
       },
       {
-        "title": "OCR Tools with Functional Programming",
-        "description": "Highly modular OCR web application using functional programming paradigms. Leverages Monads, function composition, and higher-order functions for predictable text processing. Implements pure functions and immutable data structures for maintainability.",
-        "tags": ["React", "Python", "Functional Programming", "OCR"],
+        "title": "OCR Tools (Functional Programming)",
+        "description": "Developed a modular OCR web app that uses functional programming patterns to extract, transform, edit, and export text predictably.",
+        "highlights": [
+          "Reusable text transformations built with monads and function composition",
+          "Pure functions and immutable data structures for maintainability",
+          "Declarative UI for viewing, editing, formatting, and exporting text"
+        ],
+        "tags": ["Vite", "React", "Python", "Functional Programming", "OCR"],
         "link": {
           "label": "View on GitHub",
           "href": "https://github.com/AuJUngZ/functional-OCR"
@@ -184,8 +230,13 @@
       },
       {
         "title": "BOTMAPS",
-        "description": "Full-stack web application for visualizing Computer Engineering Department's floor plan at Chiang Mai University. Integrates TeamUp API for real-time room schedules with features for viewing room availability and course details.",
-        "tags": ["React", "Golang", "MySQL", "API Integration"],
+        "description": "Built a full-stack campus mapping experience that makes room schedules and availability easier for professors and students to understand at a glance.",
+        "highlights": [
+          "Floor-plan visualization for the Computer Engineering Department",
+          "Real-time room schedule integration through third-party APIs",
+          "Improved usability around room availability and course details"
+        ],
+        "tags": ["Vite React", "Go", "MySQL", "API Integration"],
         "link": {
           "label": "View on GitHub",
           "href": "https://github.com/SE-Project-BOTMAPS"
@@ -193,11 +244,30 @@
       }
     ]
   },
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "school": "Chiang Mai University",
+        "location": "Chiang Mai, Thailand",
+        "degree": "B.Eng. in Computer Engineering",
+        "period": "2021 - 2025",
+        "details": ["GPAX 3.87", "First-Class Honors"]
+      }
+    ]
+  },
+  "certifications": {
+    "title": "Certifications",
+    "items": [
+      "Huawei Cloud HCCDA - Cloud Native",
+      "Huawei Cloud HCCDA - Tech Essentials Certificate"
+    ]
+  },
   "contact": {
-    "title": "Let's Build Something Amazing",
-    "description": "I'm currently available for DevOps consulting, training, and freelance work. Whether you need CI/CD pipeline design, cloud infrastructure, or just want to discuss DevOps practices, feel free to reach out!",
+    "title": "Open to Productive Conversations",
+    "description": "I’m especially interested in DevOps engineering roles where platform quality, automation, and developer experience matter. I’m also available for consulting, internal training, and delivery-focused advisory work.",
     "email": "natthaphong.thepphithak@gmail.com",
-    "phone": "+66955301640",
+    "phone": "+66 955301640",
     "socials": [
       {
         "platform": "GitHub",
@@ -212,7 +282,7 @@
     ]
   },
   "footer": {
-    "copyright": "© 2025 Natthaphong Thepphithak. All rights reserved.",
+    "copyright": "© 2026 Natthaphong Thepphithak. All rights reserved.",
     "links": [
       { "label": "GitHub", "href": "https://github.com/AuJungZ" },
       {

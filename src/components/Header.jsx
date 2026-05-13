@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Network } from "lucide-react";
+import { Menu, Network, X } from "lucide-react";
 import { ModeToggle } from "@/components/mode-toggle";
 import cvPdf from "@/assets/Natthaphong_Thepphithak_CV.pdf";
 
@@ -13,15 +13,13 @@ export default function Header({ data }) {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
 
-  // Helper to render link - use <a> for hash links on homepage, <Link> for routes
   const renderNavLink = (link, isMobile = false) => {
     const isHashLink = link.href.startsWith("#");
     const baseClasses = isMobile
-      ? "text-muted-foreground hover:text-primary transition-colors duration-300 text-base font-medium py-2"
-      : "text-muted-foreground hover:text-primary transition-colors duration-300 text-sm font-medium leading-normal";
+      ? "py-2 text-base font-medium text-muted-foreground transition-colors duration-300 hover:text-primary"
+      : "text-sm font-medium leading-normal text-muted-foreground transition-colors duration-300 hover:text-primary";
 
     if (isHashLink) {
-      // Hash links - on homepage use anchor, otherwise navigate to homepage with hash
       if (isHomePage) {
         return (
           <a
@@ -33,57 +31,62 @@ export default function Header({ data }) {
             {link.label}
           </a>
         );
-      } else {
-        return (
-          <Link
-            key={link.label}
-            className={baseClasses}
-            to={`/${link.href}`}
-            onClick={isMobile ? closeMenu : undefined}
-          >
-            {link.label}
-          </Link>
-        );
       }
-    } else {
-      // Regular route links
+
       return (
         <Link
           key={link.label}
           className={baseClasses}
-          to={link.href}
+          to={`/${link.href}`}
           onClick={isMobile ? closeMenu : undefined}
         >
           {link.label}
         </Link>
       );
     }
+
+    return (
+      <Link
+        key={link.label}
+        className={baseClasses}
+        to={link.href}
+        onClick={isMobile ? closeMenu : undefined}
+      >
+        {link.label}
+      </Link>
+    );
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="flex items-center justify-between whitespace-nowrap px-4 sm:px-10 py-3 max-w-6xl mx-auto">
+    <header className="sticky top-0 z-50 w-full border-b border-border/70 bg-background/82 backdrop-blur-xl">
+      <div className="mx-auto flex max-w-6xl items-center justify-between whitespace-nowrap px-4 py-4 sm:px-8">
         <Link to="/" className="flex items-center gap-3 text-foreground">
-          <div className="size-8 flex items-center justify-center rounded-lg bg-gradient-to-br from-primary to-secondary">
-            <Network className="text-background size-5" />
+          <div className="flex size-10 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,rgba(30,64,175,0.95),rgba(14,165,233,0.9))] shadow-[0_16px_32px_-20px_rgba(30,64,175,0.95)]">
+            <Network className="size-5 text-white" />
           </div>
-          <h2 className="text-lg font-bold leading-tight tracking-[-0.015em] transition-all">
-            {data.name}
-          </h2>
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+              Portfolio
+            </p>
+            <h2 className="text-sm font-semibold leading-tight tracking-[-0.02em] transition-all sm:text-base">
+              {data.name}
+            </h2>
+          </div>
         </Link>
-        <div className="hidden md:flex flex-1 justify-end gap-8 items-center">
-          <div className="flex items-center gap-8">
+
+        <div className="hidden flex-1 items-center justify-end gap-6 md:flex">
+          <div className="flex items-center gap-7">
             {data.links.map((link) => renderNavLink(link))}
             <Link
               to="/blog"
-              className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm font-medium leading-normal"
+              className="text-sm font-medium leading-normal text-muted-foreground transition-colors duration-300 hover:text-primary"
             >
               Blog
             </Link>
           </div>
           <Button
             asChild
-            className="rounded-full h-10 px-6 min-w-[84px] max-w-[480px] bg-primary text-primary-foreground font-bold tracking-[-0.015em] hover:bg-primary/90 shadow-[0_0_20px_rgba(0,245,160,0.4)]"
+            className="h-10 rounded-full px-5 text-sm font-semibold shadow-[0_16px_36px_-24px_rgba(30,64,175,0.95)]"
           >
             <a href={cvPdf} download="Natthaphong_Thepphithak_CV.pdf">
               {data.cta.label}
@@ -91,10 +94,11 @@ export default function Header({ data }) {
           </Button>
           <ModeToggle />
         </div>
+
         <Button
           variant="ghost"
           size="icon"
-          className="md:hidden text-muted-foreground hover:bg-card"
+          className="text-muted-foreground hover:bg-card md:hidden"
           onClick={toggleMenu}
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         >
@@ -102,21 +106,20 @@ export default function Header({ data }) {
         </Button>
       </div>
 
-      {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-background/95 backdrop-blur-md border-b border-border animate-in fade-in slide-in-from-top-2 duration-200">
-          <nav className="flex flex-col px-4 py-4 gap-4 max-w-6xl mx-auto">
+        <div className="animate-in slide-in-from-top-2 duration-200 md:hidden border-b border-border/70 bg-background/95 backdrop-blur-xl fade-in">
+          <nav className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-4">
             {data.links.map((link) => renderNavLink(link, true))}
             <Link
               to="/blog"
-              className="text-muted-foreground hover:text-primary transition-colors duration-300 text-base font-medium py-2"
+              className="py-2 text-base font-medium text-muted-foreground transition-colors duration-300 hover:text-primary"
               onClick={closeMenu}
             >
               Blog
             </Link>
             <Button
               asChild
-              className="rounded-full h-10 px-6 bg-primary text-primary-foreground font-bold tracking-[-0.015em] hover:bg-primary/90 shadow-[0_0_20px_rgba(0,245,160,0.4)] w-full mt-2"
+              className="mt-2 h-10 w-full rounded-full px-6 text-sm font-semibold shadow-[0_16px_36px_-24px_rgba(30,64,175,0.95)]"
             >
               <a
                 href={cvPdf}
@@ -126,7 +129,7 @@ export default function Header({ data }) {
                 {data.cta.label}
               </a>
             </Button>
-            <div className="flex items-center justify-between pt-2 border-t border-border mt-2">
+            <div className="mt-2 flex items-center justify-between border-t border-border/70 pt-2">
               <span className="text-sm text-muted-foreground">Theme</span>
               <ModeToggle />
             </div>

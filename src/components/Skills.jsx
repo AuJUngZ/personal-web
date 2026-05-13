@@ -1,99 +1,93 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
-  SiDocker,
-  SiKubernetes,
-  SiJenkins,
-  SiArgo,
-  SiTerraform,
-  SiAmazonwebservices,
-  SiGooglecloud,
-  SiPython,
   SiApachegroovy,
-  SiTypescript,
+  SiDocker,
+  SiElastic,
+  SiGithubactions,
+  SiGitlab,
+  SiGnubash,
   SiGo,
-  SiReact,
-  SiNextdotjs,
-  SiVuedotjs,
-  SiFlutter,
-  SiNestjs,
-  SiElixir,
-  SiPostgresql,
-  SiMysql,
+  SiGooglecloud,
+  SiGrafana,
+  SiHelm,
+  SiJenkins,
+  SiKubernetes,
   SiMongodb,
-  SiGit,
-  SiN8N,
-  SiJira,
-  SiConfluence,
+  SiMysql,
+  SiPostgresql,
+  SiPrometheus,
+  SiPython,
+  SiTerraform,
+  SiTypescript,
 } from "react-icons/si";
-import { FaJava, FaMicrosoft, FaAws } from "react-icons/fa";
-import { BsMicrosoftTeams } from "react-icons/bs";
+import { FaAws, FaJava, FaMicrosoft } from "react-icons/fa";
+import { GitBranch, ShieldCheck, Waypoints } from "lucide-react";
 
 const iconMap = {
   Docker: SiDocker,
   Kubernetes: SiKubernetes,
   Jenkins: SiJenkins,
-  ArgoCD: SiArgo,
+  ArgoCD: GitBranch,
   Terraform: SiTerraform,
-  Azure: FaMicrosoft,
+  "Microsoft Azure": FaMicrosoft,
   AWS: FaAws,
   GCP: SiGooglecloud,
   Python: SiPython,
   Groovy: SiApachegroovy,
   TypeScript: SiTypescript,
-  Golang: SiGo,
+  Go: SiGo,
   Java: FaJava,
-  React: SiReact,
-  "Next.js": SiNextdotjs,
-  "Vue.js": SiVuedotjs,
-  Flutter: SiFlutter,
-  NestJS: SiNestjs,
-  Elysia: SiElixir,
   PostgreSQL: SiPostgresql,
   MySQL: SiMysql,
   MongoDB: SiMongodb,
-  Git: SiGit,
-  N8n: SiN8N,
-  Jira: SiJira,
-  Confluence: SiConfluence,
-  "Microsoft Teams": BsMicrosoftTeams,
+  Prometheus: SiPrometheus,
+  Grafana: SiGrafana,
+  "ELK Stack": SiElastic,
+  Helm: SiHelm,
+  "GitHub Actions": SiGithubactions,
+  "GitLab CI": SiGitlab,
+  GitOps: GitBranch,
+  DevSecOps: ShieldCheck,
+  Kustomize: Waypoints,
+  Bash: SiGnubash,
 };
 
 export default function Skills({ data }) {
   return (
-    <section className="py-10 md:py-20" id="skills">
-      <div className="text-center mb-12">
-        <h2 className="text-foreground text-3xl font-bold leading-tight tracking-[-0.015em]">
+    <section className="py-12 md:py-20" id="skills">
+      <div className="mx-auto mb-12 max-w-2xl text-center">
+        <p className="text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-primary">
+          Capabilities
+        </p>
+        <h2 className="mt-3 text-3xl font-semibold leading-tight tracking-[-0.04em] text-foreground md:text-4xl">
           {data.title}
         </h2>
-        <p className="mt-2 text-muted-foreground max-w-xl mx-auto">
+        <p className="mt-4 text-base leading-7 text-muted-foreground">
           {data.description}
         </p>
       </div>
-      <div className="flex flex-wrap justify-center gap-8">
+
+      <div className="grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
         {data.categories.map((category) => (
           <Card
             key={category.title}
-            className="bg-card border-border w-full md:w-[calc(33.333%-1.5rem)] md:max-w-[400px]"
+            className="rounded-[1.75rem] border-border/70 bg-card/95 py-0 shadow-[0_24px_80px_-52px_rgba(15,23,42,0.7)]"
           >
-            <CardHeader>
-              <CardTitle className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
+            <CardHeader className="px-5 pt-5">
+              <CardTitle className="text-lg font-semibold tracking-[-0.02em] text-foreground">
                 {category.title}
               </CardTitle>
             </CardHeader>
-            <CardContent>
-              <div className="flex flex-wrap gap-2">
+            <CardContent className="px-5 pb-5">
+              <div className="flex flex-wrap gap-2.5">
                 {category.items.map((item) => {
                   const IconComponent = iconMap[item.name];
                   return (
                     <span
                       key={item.name}
-                      className="flex items-center gap-2 rounded-md bg-border/50 py-1 px-3 text-sm font-medium text-muted-foreground"
+                      className="flex items-center gap-2 rounded-full border border-border/70 bg-background/75 px-3 py-2 text-sm font-medium text-foreground/85"
                     >
-                      {IconComponent ? (
-                        <IconComponent className="size-4" />
-                      ) : (
-                        item.icon
-                      )}
+                      {IconComponent ? <IconComponent className="size-4" /> : null}
                       {item.name}
                     </span>
                   );
