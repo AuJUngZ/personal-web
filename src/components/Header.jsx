@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router";
 import { Button } from "@/components/ui/button";
-import { Menu, Network, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { ModeToggle } from "@/components/mode-toggle";
 import cvPdf from "@/assets/Natthaphong_Thepphithak_CV.pdf";
 
@@ -58,12 +58,14 @@ export default function Header({ data }) {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/70 bg-background/82 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/60 backdrop-blur-xl supports-[backdrop-filter]:bg-background/50">
       <div className="mx-auto flex max-w-6xl items-center justify-between whitespace-nowrap px-4 py-4 sm:px-8">
         <Link to="/" className="flex items-center gap-3 text-foreground">
-          <div className="flex size-10 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,rgba(30,64,175,0.95),rgba(14,165,233,0.9))] shadow-[0_16px_32px_-20px_rgba(30,64,175,0.95)]">
-            <Network className="size-5 text-white" />
-          </div>
+          <img
+            src="/logo.png"
+            alt={`${data.name} logo`}
+            className="size-10 rounded-2xl object-cover shadow-[0_16px_32px_-20px_rgba(30,64,175,0.95)]"
+          />
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
               Portfolio
@@ -107,7 +109,7 @@ export default function Header({ data }) {
       </div>
 
       {isMenuOpen && (
-        <div className="animate-in slide-in-from-top-2 duration-200 md:hidden border-b border-border/70 bg-background/95 backdrop-blur-xl fade-in">
+        <div className="animate-in slide-in-from-top-2 duration-200 border-b border-border/60 bg-background/72 backdrop-blur-xl supports-[backdrop-filter]:bg-background/60 fade-in md:hidden">
           <nav className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-4">
             {data.links.map((link) => renderNavLink(link, true))}
             <Link
