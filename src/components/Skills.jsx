@@ -71,7 +71,7 @@ export default function Skills({ data }) {
         {data.categories.map((category) => (
           <Card
             key={category.title}
-            className="rounded-[1.75rem] border-border/70 bg-card/95 py-0 shadow-[0_24px_80px_-52px_rgba(15,23,42,0.7)]"
+            className="min-w-0 rounded-[1.75rem] border-border/70 bg-card/95 py-0 shadow-[0_24px_80px_-52px_rgba(15,23,42,0.7)]"
           >
             <CardHeader className="px-5 pt-5">
               <CardTitle className="text-lg font-semibold tracking-[-0.02em] text-foreground">
@@ -85,7 +85,7 @@ export default function Skills({ data }) {
                   return (
                     <span
                       key={item.name}
-                      className="flex items-center gap-2 rounded-full border border-border/70 bg-background/75 px-3 py-2 text-sm font-medium text-foreground/85"
+                      className="flex max-w-full items-center gap-2 rounded-full border border-border/70 bg-background/75 px-3 py-2 text-sm font-medium text-foreground/85"
                     >
                       {IconComponent ? <IconComponent className="size-4" /> : null}
                       {item.name}

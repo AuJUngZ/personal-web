@@ -28,7 +28,7 @@ export default function Experience({ data }) {
       <ol className="flex flex-col gap-6 md:hidden" aria-label={data.title}>
         {data.jobs.map((job, index) => (
           <li key={`${job.company}-${job.period}`}>
-            <Card className="rounded-lg border-border/70 bg-card/95 py-0 shadow-[0_24px_80px_-54px_rgba(15,23,42,0.7)]">
+            <Card className="min-w-0 rounded-lg border-border/70 bg-card/95 py-0 shadow-[0_24px_80px_-54px_rgba(15,23,42,0.7)]">
               <CardContent className="p-5">
                 <article>
                   <header className="mb-4 flex items-start gap-4">
@@ -44,7 +44,7 @@ export default function Experience({ data }) {
                     </div>
                     <div className="min-w-0 flex-1">
                       <div className="flex flex-wrap items-start justify-between gap-2">
-                        <h3 className="text-lg font-semibold leading-tight text-foreground">
+                        <h3 className="break-words text-lg font-semibold leading-tight text-foreground">
                           {job.role}
                         </h3>
                         <time
@@ -54,7 +54,7 @@ export default function Experience({ data }) {
                           {job.period}
                         </time>
                       </div>
-                      <p className="mt-1 text-sm font-medium text-foreground/85">
+                      <p className="mt-1 break-words text-sm font-medium text-foreground/85">
                         {job.company}
                       </p>
                       <p className="mt-1 inline-flex items-center gap-1.5 text-sm text-muted-foreground">
@@ -73,7 +73,7 @@ export default function Experience({ data }) {
                           className="mt-1 size-4 shrink-0 text-primary"
                           aria-hidden="true"
                         />
-                        <span>{achievement}</span>
+                        <span className="min-w-0 break-words">{achievement}</span>
                       </li>
                     ))}
                   </ul>
@@ -122,7 +122,7 @@ export default function Experience({ data }) {
               </div>
             </div>
 
-            <Card className="rounded-lg border-border/70 bg-card/95 py-0 shadow-[0_28px_90px_-56px_rgba(15,23,42,0.75)]">
+            <Card className="min-w-0 rounded-lg border-border/70 bg-card/95 py-0 shadow-[0_28px_90px_-56px_rgba(15,23,42,0.75)]">
               <CardContent className="p-7">
                 <article>
                   <header>

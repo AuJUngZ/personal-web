@@ -5,19 +5,19 @@ export default function Hero({ data }) {
   return (
     <section className="relative overflow-hidden py-14 md:py-24">
       <div className="absolute inset-x-0 top-0 -z-10 h-[34rem] bg-[radial-gradient(circle_at_top_left,_rgba(30,64,175,0.18),_transparent_48%),radial-gradient(circle_at_top_right,_rgba(14,165,233,0.12),_transparent_36%)]" />
-      <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_22rem] lg:gap-16">
-        <div className="max-w-3xl">
-          <p className="text-[0.72rem] font-semibold uppercase tracking-[0.28em] text-primary">
+      <div className="grid min-w-0 items-center gap-12 lg:grid-cols-[minmax(0,1fr)_22rem] lg:gap-16">
+        <div className="min-w-0 max-w-3xl">
+          <p className="text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-primary sm:tracking-[0.28em]">
             {data.eyebrow}
           </p>
-          <h1 className="mt-4 max-w-3xl text-4xl font-semibold leading-[1.02] tracking-[-0.05em] text-foreground sm:text-5xl lg:text-7xl">
+          <h1 className="mt-4 max-w-3xl break-words text-4xl font-semibold leading-[1.02] tracking-[-0.05em] text-foreground sm:text-5xl lg:text-7xl">
             {data.name}
           </h1>
           <div className="mt-5 flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
-            <span className="rounded-full border border-border/80 bg-card/70 px-3 py-1.5 font-medium text-foreground/88">
+            <span className="max-w-full rounded-full border border-border/80 bg-card/70 px-3 py-1.5 font-medium text-foreground/88">
               {data.title}
             </span>
-            <span className="inline-flex items-center gap-1.5 rounded-full border border-border/80 bg-card/70 px-3 py-1.5">
+            <span className="inline-flex max-w-full items-center gap-1.5 rounded-full border border-border/80 bg-card/70 px-3 py-1.5">
               <MapPin className="size-4" />
               {data.location}
             </span>

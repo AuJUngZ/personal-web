@@ -4,10 +4,10 @@ import { Github, Linkedin, Mail, Phone } from "lucide-react";
 export default function Contact({ data }) {
   return (
     <section className="py-16 md:py-24" id="contact">
-      <div className="relative mx-auto max-w-5xl overflow-hidden rounded-[2rem] border border-border/70 bg-card/95 p-8 shadow-[0_34px_110px_-68px_rgba(15,23,42,0.75)] md:p-12">
+      <div className="relative mx-auto min-w-0 max-w-5xl overflow-hidden rounded-[2rem] border border-border/70 bg-card/95 p-6 shadow-[0_34px_110px_-68px_rgba(15,23,42,0.75)] sm:p-8 md:p-12">
         <div className="absolute inset-y-0 right-0 hidden w-1/2 bg-[radial-gradient(circle_at_top_right,_rgba(30,64,175,0.15),_transparent_55%)] lg:block" />
-        <div className="relative z-10 grid gap-8 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-center">
-          <div>
+        <div className="relative z-10 grid min-w-0 gap-8 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-center">
+          <div className="min-w-0">
             <p className="text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-primary">
               Contact
             </p>
@@ -45,35 +45,35 @@ export default function Contact({ data }) {
             </div>
           </div>
 
-          <div className="space-y-3">
+          <div className="min-w-0 space-y-3">
             <a
-              className="flex items-center justify-between rounded-[1.4rem] border border-border/70 bg-background/75 px-5 py-4 transition-colors hover:border-primary/40 hover:bg-background"
+              className="flex min-w-0 items-center justify-between gap-3 rounded-[1.4rem] border border-border/70 bg-background/75 px-5 py-4 transition-colors hover:border-primary/40 hover:bg-background"
               href={`mailto:${data.email}`}
             >
-              <span>
+              <span className="min-w-0">
                 <span className="block text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
                   Email
                 </span>
-                <span className="mt-1 block text-sm font-medium text-foreground">
+                <span className="mt-1 block break-all text-sm font-medium text-foreground">
                   {data.email}
                 </span>
               </span>
-              <Mail className="size-5 text-primary" />
+              <Mail className="size-5 shrink-0 text-primary" />
             </a>
             {data.socials.map((social) => (
               <a
                 key={social.platform}
-                className="flex items-center justify-between rounded-[1.4rem] border border-border/70 bg-background/75 px-5 py-4 transition-colors hover:border-primary/40 hover:bg-background"
+                className="flex min-w-0 items-center justify-between gap-3 rounded-[1.4rem] border border-border/70 bg-background/75 px-5 py-4 transition-colors hover:border-primary/40 hover:bg-background"
                 href={social.href}
               >
-                <span className="block text-sm font-medium text-foreground">
+                <span className="block min-w-0 truncate text-sm font-medium text-foreground">
                   {social.platform}
                 </span>
                 {social.icon === "linkedin" && (
-                  <Linkedin className="size-5 text-primary" />
+                  <Linkedin className="size-5 shrink-0 text-primary" />
                 )}
                 {social.icon === "github" && (
-                  <Github className="size-5 text-primary" />
+                  <Github className="size-5 shrink-0 text-primary" />
                 )}
               </a>
             ))}

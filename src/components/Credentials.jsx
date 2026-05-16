@@ -3,8 +3,8 @@ import { Award, GraduationCap, MapPin } from "lucide-react";
 export default function Credentials({ education, certifications }) {
   return (
     <section className="py-12 md:py-20" id="education">
-      <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
-        <article className="rounded-[2rem] border border-border/70 bg-card/95 p-6 shadow-[0_28px_90px_-56px_rgba(15,23,42,0.65)] md:p-8">
+      <div className="grid min-w-0 gap-6 lg:grid-cols-[1.2fr_0.8fr]">
+        <article className="min-w-0 rounded-[2rem] border border-border/70 bg-card/95 p-6 shadow-[0_28px_90px_-56px_rgba(15,23,42,0.65)] md:p-8">
           <div className="flex items-center gap-3">
             <div className="flex size-11 items-center justify-center rounded-2xl bg-primary/12 text-primary">
               <GraduationCap className="size-5" />
@@ -26,11 +26,11 @@ export default function Credentials({ education, certifications }) {
                 className="rounded-[1.5rem] border border-border/70 bg-background/70 p-5"
               >
                 <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
-                  <div>
-                    <h3 className="text-xl font-semibold text-foreground">
+                  <div className="min-w-0">
+                    <h3 className="break-words text-xl font-semibold text-foreground">
                       {item.degree}
                     </h3>
-                    <p className="mt-1 text-base font-medium text-foreground/88">
+                    <p className="mt-1 break-words text-base font-medium text-foreground/88">
                       {item.school}
                     </p>
                   </div>
@@ -58,7 +58,7 @@ export default function Credentials({ education, certifications }) {
           </div>
         </article>
 
-        <article className="rounded-[2rem] border border-border/70 bg-card/95 p-6 shadow-[0_28px_90px_-56px_rgba(15,23,42,0.65)] md:p-8">
+        <article className="min-w-0 rounded-[2rem] border border-border/70 bg-card/95 p-6 shadow-[0_28px_90px_-56px_rgba(15,23,42,0.65)] md:p-8">
           <div className="flex items-center gap-3">
             <div className="flex size-11 items-center justify-center rounded-2xl bg-secondary/14 text-secondary">
               <Award className="size-5" />

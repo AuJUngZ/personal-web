@@ -187,6 +187,27 @@
     "description": "Projects that show how I turn technical complexity into practical systems people can use.",
     "items": [
       {
+        "title": "Jenkins Pipeline AI Investigator",
+        "description": "Built an AI agent that investigates Jenkins pipeline failures by analyzing console output, tracing the error back to the most likely Jenkinsfile or shared pipeline code, and generating practical fix guidance for developers and DevOps infra teams.",
+        "highlights": [
+          "Analyzes pipeline console logs to identify the failing stage and probable root cause",
+          "Maps errors back to the Jenkins pipeline code path that most likely caused the failure",
+          "Suggests remediation steps for application code issues, pipeline issues, and infrastructure problems"
+        ],
+        "tags": [
+          "AI Agent",
+          "Jenkins",
+          "Strands Agent",
+          "Root Cause Analysis",
+          "CI/CD",
+          "DevOps"
+        ],
+        "link": {
+          "label": "Discuss Project",
+          "href": "#contact"
+        }
+      },
+      {
         "title": "Screetner (Street Scanner)",
         "description": "Built an end-to-end asset scanning system for local-government field work, from mobile data capture to cloud processing and dashboard visualization for tax assessment workflows.",
         "highlights": [
