@@ -9,7 +9,8 @@
       "tags": ["markdown", "mermaid", "diagram", "plantuml", "documentation"],
       "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=400&fit=crop",
       "readingTime": "8 min read",
-      "published": true
+      "published": true,
+      "featured": true
     }
   ]
 }

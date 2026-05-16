@@ -1,6 +1,7 @@
 import portfolioData from "@/data/portfolio.json";
 import Hero from "@/components/Hero";
 import QuickFacts from "@/components/QuickFacts";
+import RecommendedBlog from "@/components/RecommendedBlog";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
@@ -12,6 +13,7 @@ export default function HomePage() {
     <>
       <Hero data={portfolioData.hero} />
       <QuickFacts items={portfolioData.hero.highlights} />
+      <RecommendedBlog />
       <Experience data={portfolioData.experience} />
       <Skills data={portfolioData.skills} />
       <Projects data={portfolioData.projects} />
