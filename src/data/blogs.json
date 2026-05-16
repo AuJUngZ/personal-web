@@ -1,14 +1,14 @@
 {
   "posts": [
     {
-      "slug": "complete-markdown-guide",
-      "title": "Complete Markdown Guide: Everything You Need to Know",
-      "description": "A comprehensive guide covering all Markdown features including headers, links, images, tables, code blocks, and more. Perfect for beginners and experienced writers alike.",
-      "date": "2024-12-01",
+      "slug": "mermaid-in-markdown",
+      "title": "How to Use Mermaid in Markdown for Diagrams Like PlantUML",
+      "description": "A practical guide to writing Mermaid diagrams directly in Markdown, including flowcharts, sequence diagrams, ER diagrams, Gantt charts, and a PlantUML comparison.",
+      "date": "2026-05-16",
       "author": "Natthaphong Thepphithak",
-      "tags": ["markdown", "tutorial", "documentation", "writing"],
-      "coverImage": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=800&h=400&fit=crop",
-      "readingTime": "10 min read",
+      "tags": ["markdown", "mermaid", "diagram", "plantuml", "documentation"],
+      "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=400&fit=crop",
+      "readingTime": "8 min read",
       "published": true
     }
   ]

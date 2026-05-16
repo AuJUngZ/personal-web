@@ -134,3 +134,9 @@
     font-family: "Space Grotesk", "Manrope", sans-serif;
   }
 }
+
+.mermaid-diagram svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}

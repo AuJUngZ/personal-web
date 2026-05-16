@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import MermaidDiagram from "@/components/MermaidDiagram";
 import blogsData from "@/data/blogs.json";
 import "highlight.js/styles/github-dark.css";
 
@@ -272,14 +273,27 @@ export default function BlogPost() {
                 </li>
               ),
               // Code blocks
-              pre: ({ children, ...props }) => (
-                <pre
-                  className="bg-[#0d1117] rounded-xl p-4 overflow-x-auto mb-6 border border-border"
-                  {...props}
-                >
-                  {children}
-                </pre>
-              ),
+              pre: ({ children, node, ...props }) => {
+                const codeNode = node.children?.[0];
+                const classNames = codeNode?.properties?.className ?? [];
+                const isMermaid = Array.isArray(classNames)
+                  ? classNames.includes("language-mermaid")
+                  : classNames === "language-mermaid";
+
+                if (isMermaid) {
+                  const chart = codeNode.children?.[0]?.value ?? "";
+                  return <MermaidDiagram chart={chart} />;
+                }
+
+                return (
+                  <pre
+                    className="bg-[#0d1117] rounded-xl p-4 overflow-x-auto mb-6 border border-border"
+                    {...props}
+                  >
+                    {children}
+                  </pre>
+                );
+              },
               code: ({ inline, className, children, ...props }) => {
                 if (inline) {
                   return (
