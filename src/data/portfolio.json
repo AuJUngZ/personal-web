@@ -29,7 +29,7 @@
     "highlights": [
       {
         "label": "Current role",
-        "value": "DevOps Engineer at SCB TechX"
+        "value": "Data Platform Engineer at LINE MAN Wongnai"
       },
       {
         "label": "Focus",
@@ -115,6 +115,18 @@
     "title": "Professional Experience",
     "description": "Building delivery systems, infrastructure, and developer workflows with a strong bias for reliability and speed.",
     "jobs": [
+      {
+        "role": "Data Platform Engineer",
+        "company": "LINE MAN Wongnai",
+        "location": "Bangkok, Thailand",
+        "period": "Jun 2026 - Present",
+        "summary": "Supporting private-cloud data platform operations and reliability for distributed analytics and data engineering workloads.",
+        "achievements": [
+          "Operate and maintain data platform infrastructure on private cloud, including platform upgrades, configuration changes, and production support for core components such as Apache Druid and ArgoCD.",
+          "Troubleshoot and resolve Airflow and Spark job failures by analyzing logs, runtime behavior, dependency issues, resource bottlenecks, and infrastructure-related failure patterns.",
+          "Improve the reliability and day-to-day operations of distributed data workloads, increasing platform stability for data engineering and analytics teams."
+        ]
+      },
       {
         "role": "DevOps Engineer",
         "company": "SCB TechX CO., LTD.",
