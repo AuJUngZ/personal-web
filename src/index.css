@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -121,7 +121,7 @@
   }
 
   body {
-    font-family: "Manrope", sans-serif;
+    font-family: "Manrope", "Kanit", sans-serif;
     @apply bg-background text-foreground antialiased;
   }
 
@@ -131,7 +131,7 @@
   h4,
   h5,
   h6 {
-    font-family: "Space Grotesk", "Manrope", sans-serif;
+    font-family: "Space Grotesk", "Manrope", "Kanit", sans-serif;
   }
 }
 

@@ -93,7 +93,7 @@ export default function BlogList() {
   return (
     <section className="py-10 md:py-20">
       <div className="mb-12">
-        <h1 className="text-foreground text-4xl md:text-5xl font-black mb-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
+        <h1 className="text-foreground text-4xl md:text-5xl font-normal mb-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
           Blog
         </h1>
         <p className="text-muted-foreground text-lg max-w-2xl animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100">
@@ -182,7 +182,7 @@ export default function BlogList() {
         <div className="grid gap-6 md:grid-cols-2">
           {paginatedPosts.map((post) => (
             <Link key={post.slug} to={`/blog/${post.slug}`} className="group">
-              <Card className="h-full overflow-hidden border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 py-0 gap-0">
+              <Card className="h-full overflow-hidden border-border hover:border-primary/50 transition-all duration-300 hover:bg-muted/40 py-0 gap-0">
                 {/* Cover Image */}
                 <div className="relative h-48 overflow-hidden">
                   <img
@@ -204,7 +204,7 @@ export default function BlogList() {
                       {post.readingTime}
                     </span>
                   </div>
-                  <CardTitle className="text-xl group-hover:text-primary transition-colors line-clamp-2">
+                  <CardTitle className="font-normal text-xl group-hover:text-primary transition-colors line-clamp-2">
                     {post.title}
                   </CardTitle>
                 </CardHeader>
@@ -242,7 +242,7 @@ export default function BlogList() {
           <div className="inline-flex items-center justify-center size-16 rounded-full bg-muted mb-6">
             <FileText className="size-8 text-muted-foreground" />
           </div>
-          <h3 className="text-xl font-semibold text-foreground mb-2">
+          <h3 className="text-xl font-normal text-foreground mb-2">
             No Blog Posts Yet
           </h3>
           <p className="text-muted-foreground max-w-md mx-auto">
@@ -256,7 +256,7 @@ export default function BlogList() {
           <div className="inline-flex items-center justify-center size-16 rounded-full bg-muted mb-6">
             <SearchX className="size-8 text-muted-foreground" />
           </div>
-          <h3 className="text-xl font-semibold text-foreground mb-2">
+          <h3 className="text-xl font-normal text-foreground mb-2">
             No Posts Found
           </h3>
           <p className="text-muted-foreground mb-6 max-w-md mx-auto">

@@ -4,7 +4,6 @@ import { ArrowRight, ArrowUpRight, Linkedin, MapPin } from "lucide-react";
 export default function Hero({ data, linkedin }) {
   return (
     <section className="relative overflow-hidden py-14 md:py-24">
-      <div className="absolute inset-x-0 top-0 -z-10 h-[34rem] bg-[radial-gradient(circle_at_top_left,_rgba(30,64,175,0.18),_transparent_48%),radial-gradient(circle_at_top_right,_rgba(14,165,233,0.12),_transparent_36%)]" />
       <div className="grid min-w-0 items-center gap-12 lg:grid-cols-[minmax(0,1fr)_22rem] lg:gap-16">
         <div className="min-w-0 max-w-3xl">
           <p className="text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-primary sm:tracking-[0.28em]">
@@ -14,10 +13,10 @@ export default function Hero({ data, linkedin }) {
             {data.name}
           </h1>
           <div className="mt-5 flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
-            <span className="max-w-full rounded-full border border-border/80 bg-card/70 px-3 py-1.5 font-medium text-foreground/88">
+            <span className="max-w-full rounded-full border border-border bg-card px-3 py-1.5 font-medium text-foreground/88">
               {data.title}
             </span>
-            <span className="inline-flex max-w-full items-center gap-1.5 rounded-full border border-border/80 bg-card/70 px-3 py-1.5">
+            <span className="inline-flex max-w-full items-center gap-1.5 rounded-full border border-border bg-card px-3 py-1.5">
               <MapPin className="size-4" />
               {data.location}
             </span>
@@ -34,8 +33,8 @@ export default function Hero({ data, linkedin }) {
                 size="lg"
                 className={
                   action.primary
-                    ? "h-12 rounded-full px-6 text-sm font-semibold shadow-[0_18px_40px_-24px_rgba(30,64,175,0.7)]"
-                    : "h-12 rounded-full border-border/80 bg-card/75 px-6 text-sm font-semibold text-foreground"
+                    ? "h-12 rounded-full px-6 text-sm font-semibold shadow-none"
+                    : "h-12 rounded-full border-border bg-card px-6 text-sm font-semibold text-foreground"
                 }
               >
                 <a href={action.href} className="flex items-center gap-2">
@@ -48,12 +47,9 @@ export default function Hero({ data, linkedin }) {
         </div>
 
         <div className="mx-auto flex w-full max-w-[22rem] justify-center lg:justify-end">
-          <div className="relative isolate w-full rounded-[2rem] border border-border/70 bg-card/85 p-6 shadow-[0_36px_120px_-60px_rgba(15,23,42,0.8)] backdrop-blur">
-            <div className="absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-primary/70 to-transparent" />
-            <div className="absolute -right-6 -top-6 -z-10 size-24 rounded-full bg-primary/15 blur-3xl" />
-            <div className="absolute -bottom-8 -left-4 -z-10 size-24 rounded-full bg-secondary/15 blur-3xl" />
+          <div className="relative isolate w-full rounded-2xl border border-border bg-card p-6 shadow-none">
             <div
-              className="aspect-[4/5] w-full rounded-[1.5rem] border border-border/70 bg-cover bg-center"
+              className="aspect-[4/5] w-full rounded-2xl border border-border bg-cover bg-center"
               style={{ backgroundImage: `url("${data.image.src}")` }}
               aria-label={data.image.alt}
             />
@@ -63,7 +59,7 @@ export default function Hero({ data, linkedin }) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`View ${data.name} on LinkedIn (opens in a new tab)`}
-                className="mt-5 flex items-center gap-3 rounded-2xl border border-border/70 bg-background/75 p-4 transition-colors hover:border-primary/50 hover:bg-primary/5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+                className="mt-5 flex items-center gap-3 rounded-2xl border border-border bg-background p-4 transition-colors hover:border-primary/50 hover:bg-primary/5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
               >
                 <span className="grid size-10 shrink-0 place-items-center rounded-lg bg-[#0a66c2] text-white">
                   <Linkedin className="size-6" aria-hidden="true" />

@@ -33,7 +33,7 @@ export default function RecommendedBlog() {
           <p className="text-[0.72rem] font-semibold uppercase tracking-[0.28em] text-primary">
             Recommended read
           </p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-[-0.04em] text-foreground md:text-4xl">
+          <h2 className="mt-3 text-3xl font-normal tracking-[-0.04em] text-foreground md:text-4xl">
             A blog post worth your time
           </h2>
           <p className="mt-3 max-w-xl text-base leading-7 text-muted-foreground">
@@ -50,7 +50,7 @@ export default function RecommendedBlog() {
         </Button>
       </div>
 
-      <Card className="min-w-0 overflow-hidden border-border/70 bg-card/90 py-0 shadow-[0_28px_90px_-60px_rgba(15,23,42,0.75)]">
+      <Card className="min-w-0 overflow-hidden border-border bg-card py-0 shadow-none">
         <div className="grid min-w-0 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
           <div className="relative min-h-72">
             <img
@@ -74,7 +74,7 @@ export default function RecommendedBlog() {
                   {featuredPost.readingTime}
                 </span>
               </div>
-              <h3 className="mt-3 max-w-xl break-words text-2xl font-semibold leading-tight md:text-3xl">
+              <h3 className="mt-3 max-w-xl break-words text-2xl font-normal leading-tight md:text-3xl">
                 {featuredPost.title}
               </h3>
             </div>

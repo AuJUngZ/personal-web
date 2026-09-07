@@ -37,8 +37,8 @@ export default function Projects({ data }) {
           loop: false,
         }}
       >
-        <CarouselPrevious className="hidden xl:inline-flex left-0 z-20 border-border/70 bg-background/95 shadow-md" />
-        <CarouselNext className="hidden xl:inline-flex right-0 z-20 border-border/70 bg-background/95 shadow-md" />
+        <CarouselPrevious className="hidden xl:inline-flex left-0 z-20 border-border bg-background shadow-sm" />
+        <CarouselNext className="hidden xl:inline-flex right-0 z-20 border-border bg-background shadow-sm" />
         <CarouselContent viewportClassName="px-1 py-4 sm:px-2">
           {data.items.map((project, index) => (
             <CarouselItem
@@ -46,7 +46,7 @@ export default function Projects({ data }) {
               className="min-w-0 basis-full md:basis-1/2 xl:basis-1/3"
             >
               <Card
-                className={`group flex h-full min-w-0 flex-col overflow-hidden rounded-[1.85rem] border-border/70 bg-card/95 py-0 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_32px_95px_-58px_rgba(15,23,42,0.75)] ${
+                className={`group flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border-border bg-card py-0 transition-all duration-300 hover:bg-muted/40 ${
                   index % 2 === 0
                     ? "hover:border-primary/50"
                     : "hover:border-secondary/50"
@@ -85,7 +85,7 @@ export default function Projects({ data }) {
                     ))}
                   </div>
                 </CardContent>
-                <CardFooter className="border-t border-border/70 bg-background/60 p-5">
+                <CardFooter className="border-t border-border bg-background p-5">
                   <a
                     className={`flex min-w-0 items-center gap-2 text-sm font-semibold transition-all duration-300 group-hover:gap-3 ${
                       index % 2 === 0 ? "text-primary" : "text-secondary"

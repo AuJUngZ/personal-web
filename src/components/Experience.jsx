@@ -28,7 +28,7 @@ export default function Experience({ data }) {
       <ol className="flex flex-col gap-6 md:hidden" aria-label={data.title}>
         {data.jobs.map((job, index) => (
           <li key={`${job.company}-${job.period}`}>
-            <Card className="min-w-0 rounded-lg border-border/70 bg-card/95 py-0 shadow-[0_24px_80px_-54px_rgba(15,23,42,0.7)]">
+            <Card className="min-w-0 rounded-lg border-border bg-card py-0 shadow-none">
               <CardContent className="p-5">
                 <article>
                   <header className="mb-4 flex items-start gap-4">
@@ -122,7 +122,7 @@ export default function Experience({ data }) {
               </div>
             </div>
 
-            <Card className="min-w-0 rounded-lg border-border/70 bg-card/95 py-0 shadow-[0_28px_90px_-56px_rgba(15,23,42,0.75)]">
+            <Card className="min-w-0 rounded-lg border-border bg-card py-0 shadow-none">
               <CardContent className="p-7">
                 <article>
                   <header>

@@ -1,6 +1,18 @@
 {
   "posts": [
     {
+      "slug": "from-devops-to-data-platform-engineer",
+      "title": "จาก DevOps สู่ Data Platform Engineer: ต่อยอดพื้นฐานเดิม เปิดมุมมองใหม่",
+      "description": "ประสบการณ์ย้ายจาก DevOps มาทำ Data Platform Engineer ที่ LINE MAN Wongnai ตั้งแต่การเรียนรู้ผ่านงานจริง การใช้ทักษะเดิม ไปจนถึงการเข้าใจผู้ใช้ข้อมูลและมองต่อไปถึง AI Platform",
+      "date": "2026-09-07",
+      "author": "Natthaphong Thepphithak",
+      "tags": ["DevOps", "Data Platform", "Career", "Learning by Doing"],
+      "coverImage": "/devops-to-data-platform.png",
+      "readingTime": "6 min read",
+      "published": true,
+      "featured": true
+    },
+    {
       "slug": "mermaid-in-markdown",
       "title": "How to Use Mermaid in Markdown for Diagrams Like PlantUML",
       "description": "A practical guide to writing Mermaid diagrams directly in Markdown, including flowcharts, sequence diagrams, ER diagrams, Gantt charts, and a PlantUML comparison.",
@@ -10,7 +22,7 @@
       "coverImage": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=400&fit=crop",
       "readingTime": "8 min read",
       "published": true,
-      "featured": true
+      "featured": false
     }
   ]
 }

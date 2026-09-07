@@ -5,7 +5,7 @@ export default function QuickFacts({ items }) {
         {items.map((item) => (
           <article
             key={item.label}
-            className="min-w-0 rounded-[1.75rem] border border-border/70 bg-card/90 p-5 shadow-[0_24px_80px_-48px_rgba(15,23,42,0.55)] backdrop-blur"
+            className="min-w-0 rounded-2xl border border-border bg-card p-5 shadow-none"
           >
             <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-muted-foreground">
               {item.label}

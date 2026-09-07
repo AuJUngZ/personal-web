@@ -4,8 +4,7 @@ import { Github, Linkedin, Mail, Phone } from "lucide-react";
 export default function Contact({ data }) {
   return (
     <section className="py-16 md:py-24" id="contact">
-      <div className="relative mx-auto min-w-0 max-w-5xl overflow-hidden rounded-[2rem] border border-border/70 bg-card/95 p-6 shadow-[0_34px_110px_-68px_rgba(15,23,42,0.75)] sm:p-8 md:p-12">
-        <div className="absolute inset-y-0 right-0 hidden w-1/2 bg-[radial-gradient(circle_at_top_right,_rgba(30,64,175,0.15),_transparent_55%)] lg:block" />
+      <div className="relative mx-auto min-w-0 max-w-5xl overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-none sm:p-8 md:p-12">
         <div className="relative z-10 grid min-w-0 gap-8 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-center">
           <div className="min-w-0">
             <p className="text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-primary">
@@ -20,7 +19,7 @@ export default function Contact({ data }) {
             <div className="mt-8 flex flex-wrap gap-3">
               <Button
                 asChild
-                className="h-12 rounded-full px-6 text-sm font-semibold shadow-[0_18px_40px_-24px_rgba(30,64,175,0.7)]"
+                className="h-12 rounded-full px-6 text-sm font-semibold shadow-none"
               >
                 <a
                   href={`mailto:${data.email}`}
@@ -33,7 +32,7 @@ export default function Contact({ data }) {
               <Button
                 asChild
                 variant="outline"
-                className="h-12 rounded-full border-border/80 bg-background/75 px-6 text-sm font-semibold text-foreground"
+                className="h-12 rounded-full border-border bg-background px-6 text-sm font-semibold text-foreground"
               >
                 <a href={`tel:${data.phone.replace(/\s/g, "")}`}>
                   <span className="flex items-center gap-2">
@@ -47,7 +46,7 @@ export default function Contact({ data }) {
 
           <div className="min-w-0 space-y-3">
             <a
-              className="flex min-w-0 items-center justify-between gap-3 rounded-[1.4rem] border border-border/70 bg-background/75 px-5 py-4 transition-colors hover:border-primary/40 hover:bg-background"
+              className="flex min-w-0 items-center justify-between gap-3 rounded-2xl border border-border bg-background px-5 py-4 transition-colors hover:border-primary/40 hover:bg-background"
               href={`mailto:${data.email}`}
             >
               <span className="min-w-0">
@@ -63,7 +62,7 @@ export default function Contact({ data }) {
             {data.socials.map((social) => (
               <a
                 key={social.platform}
-                className="flex min-w-0 items-center justify-between gap-3 rounded-[1.4rem] border border-border/70 bg-background/75 px-5 py-4 transition-colors hover:border-primary/40 hover:bg-background"
+                className="flex min-w-0 items-center justify-between gap-3 rounded-2xl border border-border bg-background px-5 py-4 transition-colors hover:border-primary/40 hover:bg-background"
                 href={social.href}
               >
                 <span className="block min-w-0 truncate text-sm font-medium text-foreground">

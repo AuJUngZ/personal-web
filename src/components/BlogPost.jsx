@@ -82,7 +82,7 @@ export default function BlogPost() {
     return (
       <section className="py-10 md:py-20">
         <div className="text-center">
-          <h1 className="text-4xl font-bold mb-4">Post Not Found</h1>
+          <h1 className="text-4xl font-normal mb-4">Post Not Found</h1>
           <p className="text-muted-foreground mb-8">
             The blog post you're looking for doesn't exist.
           </p>
@@ -140,7 +140,7 @@ export default function BlogPost() {
         </div>
 
         {/* Title */}
-        <h1 className="text-3xl md:text-5xl font-black text-foreground mb-4 leading-tight">
+        <h1 className="text-3xl md:text-5xl font-normal text-foreground mb-4 leading-tight">
           {post.title}
         </h1>
 
@@ -197,7 +197,7 @@ export default function BlogPost() {
               // Custom heading styles
               h1: ({ children, ...props }) => (
                 <h1
-                  className="text-3xl md:text-4xl font-black text-foreground mt-12 mb-6 pb-2 border-b border-border"
+                  className="text-3xl md:text-4xl font-normal text-foreground mt-12 mb-6 pb-2 border-b border-border"
                   {...props}
                 >
                   {children}
@@ -205,7 +205,7 @@ export default function BlogPost() {
               ),
               h2: ({ children, ...props }) => (
                 <h2
-                  className="text-2xl md:text-3xl font-bold text-foreground mt-10 mb-4 scroll-mt-20"
+                  className="text-2xl md:text-3xl font-normal text-foreground mt-10 mb-4 scroll-mt-20"
                   {...props}
                 >
                   {children}
@@ -213,7 +213,7 @@ export default function BlogPost() {
               ),
               h3: ({ children, ...props }) => (
                 <h3
-                  className="text-xl md:text-2xl font-semibold text-foreground mt-8 mb-3"
+                  className="text-xl md:text-2xl font-normal text-foreground mt-8 mb-3"
                   {...props}
                 >
                   {children}
@@ -221,7 +221,7 @@ export default function BlogPost() {
               ),
               h4: ({ children, ...props }) => (
                 <h4
-                  className="text-lg md:text-xl font-semibold text-foreground mt-6 mb-2"
+                  className="text-lg md:text-xl font-normal text-foreground mt-6 mb-2"
                   {...props}
                 >
                   {children}

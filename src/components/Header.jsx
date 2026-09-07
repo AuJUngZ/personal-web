@@ -58,13 +58,13 @@ export default function Header({ data }) {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/60 backdrop-blur-xl supports-[backdrop-filter]:bg-background/50">
+    <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background">
       <div className="mx-auto flex min-w-0 max-w-6xl items-center justify-between gap-3 px-4 py-4 sm:px-8">
         <Link to="/" className="flex min-w-0 items-center gap-3 text-foreground">
           <img
             src="/logo.png"
             alt={`${data.name} logo`}
-            className="size-10 shrink-0 rounded-2xl object-cover shadow-[0_16px_32px_-20px_rgba(30,64,175,0.95)]"
+            className="size-10 shrink-0 rounded-2xl object-cover shadow-none"
           />
           <div className="min-w-0">
             <p className="truncate text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
@@ -88,7 +88,7 @@ export default function Header({ data }) {
           </div>
           <Button
             asChild
-            className="h-10 shrink-0 rounded-full px-5 text-sm font-semibold shadow-[0_16px_36px_-24px_rgba(30,64,175,0.95)]"
+            className="h-10 shrink-0 rounded-full px-5 text-sm font-semibold shadow-none"
           >
             <a href={cvPdf} download="Natthaphong_Thepphithak_CV.pdf">
               {data.cta.label}
@@ -109,7 +109,7 @@ export default function Header({ data }) {
       </div>
 
       {isMenuOpen && (
-        <div className="animate-in slide-in-from-top-2 duration-200 border-b border-border/60 bg-background/72 backdrop-blur-xl supports-[backdrop-filter]:bg-background/60 fade-in lg:hidden">
+        <div className="animate-in slide-in-from-top-2 duration-200 border-b border-border/60 bg-background fade-in lg:hidden">
           <nav className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-4">
             {data.links.map((link) => renderNavLink(link, true))}
             <Link
@@ -121,7 +121,7 @@ export default function Header({ data }) {
             </Link>
             <Button
               asChild
-              className="mt-2 h-10 w-full rounded-full px-6 text-sm font-semibold shadow-[0_16px_36px_-24px_rgba(30,64,175,0.95)]"
+              className="mt-2 h-10 w-full rounded-full px-6 text-sm font-semibold shadow-none"
             >
               <a
                 href={cvPdf}
@@ -131,7 +131,7 @@ export default function Header({ data }) {
                 {data.cta.label}
               </a>
             </Button>
-            <div className="mt-2 flex items-center justify-between border-t border-border/70 pt-2">
+            <div className="mt-2 flex items-center justify-between border-t border-border pt-2">
               <span className="text-sm text-muted-foreground">Theme</span>
               <ModeToggle />
             </div>
