@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Natthaphong Thepphithak | DevOps Engineer"
+    "title": "Natthaphong Thepphithak | Data Platform Engineer"
   },
   "header": {
     "name": "Natthaphong Thepphithak",
@@ -18,10 +18,10 @@
   },
   "hero": {
     "name": "Natthaphong Thepphithak",
-    "title": "DevOps Engineer",
+    "title": "Data Platform Engineer | DevOps Engineer | Software Engineer",
     "eyebrow": "Recruiter-ready portfolio",
     "location": "Bangkok, Thailand",
-    "description": "DevOps engineer building resilient delivery platforms across cloud infrastructure, CI/CD, and DevSecOps. I help teams ship faster, standardize workflows, and improve production readiness without slowing developers down.",
+    "description": "Data Platform Engineer at LINE MAN Wongnai, operating large-scale data platforms and improving production reliability. My experience spans data platform services, cloud infrastructure, CI/CD, and software engineering.",
     "actions": [
       { "label": "Contact Me", "href": "#contact", "primary": true },
       { "label": "View Projects", "href": "#projects", "primary": false }
@@ -33,7 +33,7 @@
       },
       {
         "label": "Focus",
-        "value": "CI/CD, cloud infrastructure, DevSecOps"
+        "value": "Data platforms, infrastructure, CI/CD, observability"
       },
       {
         "label": "Education",
@@ -54,11 +54,23 @@
     "description": "Hands-on across infrastructure, automation, observability, and developer enablement.",
     "categories": [
       {
+        "title": "Data Platform",
+        "items": [
+          { "name": "Apache Spark" },
+          { "name": "Apache Airflow" },
+          { "name": "Kyuubi" },
+          { "name": "YARN" },
+          { "name": "Apache Druid" },
+          { "name": "Imply" },
+          { "name": "Trino" },
+          { "name": "Redash" }
+        ]
+      },
+      {
         "title": "Cloud & Infrastructure",
         "items": [
           { "name": "Microsoft Azure" },
           { "name": "AWS" },
-          { "name": "GCP" },
           { "name": "Terraform" },
           { "name": "Hybrid/On-Prem" }
         ]
@@ -82,7 +94,7 @@
         "title": "Monitoring & Observability",
         "items": [
           { "name": "Prometheus" },
-          { "name": "Grafana" },
+          { "name": "Grafana Stack" },
           { "name": "ELK Stack" },
           { "name": "Logging" },
           { "name": "Metrics" },
@@ -113,25 +125,27 @@
   },
   "experience": {
     "title": "Professional Experience",
-    "description": "Building delivery systems, infrastructure, and developer workflows with a strong bias for reliability and speed.",
+    "description": "Operating data platforms and building delivery systems, infrastructure, and developer workflows with a focus on production reliability.",
     "jobs": [
       {
         "role": "Data Platform Engineer",
         "company": "LINE MAN Wongnai",
         "location": "Bangkok, Thailand",
         "period": "Jun 2026 - Present",
-        "summary": "Supporting private-cloud data platform operations and reliability for distributed analytics and data engineering workloads.",
+        "summary": "Operating large-scale data platforms, resolving production incidents, and enhancing internal platform services.",
         "achievements": [
-          "Operate and maintain data platform infrastructure on private cloud, including platform upgrades, configuration changes, and production support for core components such as Apache Druid and ArgoCD.",
-          "Troubleshoot and resolve Airflow and Spark job failures by analyzing logs, runtime behavior, dependency issues, resource bottlenecks, and infrastructure-related failure patterns.",
-          "Improve the reliability and day-to-day operations of distributed data workloads, increasing platform stability for data engineering and analytics teams."
+          "Operate and maintain large-scale data platforms.",
+          "Troubleshoot production incidents across data processing, query engines, storage, networking, and infrastructure.",
+          "Manage platform deployments and upgrades using Kubernetes, Helm, Argo CD, GitLab CI, and Terraform.",
+          "Support monitoring, observability, access control, and secrets management across the data platform.",
+          "Contribute to building and enhancing internal data platform services."
         ]
       },
       {
         "role": "DevOps Engineer",
         "company": "SCB TechX CO., LTD.",
         "location": "Bangkok, Thailand",
-        "period": "Jun 2025 - Present",
+        "period": "Jun 2025 - May 2026",
         "summary": "Supporting large-scale banking delivery with standardized pipelines and cloud infrastructure for production-critical systems.",
         "achievements": [
           "Design, implement, maintain, and optimize end-to-end pipelines across init, build, test, security scan, and deploy stages to remove legacy bottlenecks and reduce execution time.",
@@ -209,7 +223,9 @@
         "tags": [
           "AI Agent",
           "Jenkins",
-          "Strands Agent",
+          "Groovy",
+          "Python",
+          "LLM",
           "Root Cause Analysis",
           "CI/CD",
           "DevOps"
@@ -298,7 +314,7 @@
   },
   "contact": {
     "title": "Open to Productive Conversations",
-    "description": "I’m especially interested in DevOps engineering roles where platform quality, automation, and developer experience matter. I’m also available for consulting, internal training, and delivery-focused advisory work.",
+    "description": "I’m interested in conversations about data platforms, DevOps, and software engineering where reliability, automation, and developer experience matter. I’m also available for consulting, internal training, and delivery-focused advisory work.",
     "email": "natthaphong.thepphithak@gmail.com",
     "phone": "+66 955301640",
     "socials": [

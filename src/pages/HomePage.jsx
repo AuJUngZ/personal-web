@@ -11,7 +11,10 @@ import Contact from "@/components/Contact";
 export default function HomePage() {
   return (
     <>
-      <Hero data={portfolioData.hero} />
+      <Hero
+        data={portfolioData.hero}
+        linkedin={portfolioData.contact.socials.find((social) => social.icon === "linkedin")}
+      />
       <QuickFacts items={portfolioData.hero.highlights} />
       <RecommendedBlog />
       <Experience data={portfolioData.experience} />

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, MapPin } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Linkedin, MapPin } from "lucide-react";
 
-export default function Hero({ data }) {
+export default function Hero({ data, linkedin }) {
   return (
     <section className="relative overflow-hidden py-14 md:py-24">
       <div className="absolute inset-x-0 top-0 -z-10 h-[34rem] bg-[radial-gradient(circle_at_top_left,_rgba(30,64,175,0.18),_transparent_48%),radial-gradient(circle_at_top_right,_rgba(14,165,233,0.12),_transparent_36%)]" />
@@ -57,6 +57,24 @@ export default function Hero({ data }) {
               style={{ backgroundImage: `url("${data.image.src}")` }}
               aria-label={data.image.alt}
             />
+            {linkedin && (
+              <a
+                href={linkedin.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`View ${data.name} on LinkedIn (opens in a new tab)`}
+                className="mt-5 flex items-center gap-3 rounded-2xl border border-border/70 bg-background/75 p-4 transition-colors hover:border-primary/50 hover:bg-primary/5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+              >
+                <span className="grid size-10 shrink-0 place-items-center rounded-lg bg-[#0a66c2] text-white">
+                  <Linkedin className="size-6" aria-hidden="true" />
+                </span>
+                <span className="min-w-0 flex-1">
+                  <span className="block text-sm font-semibold text-foreground">{data.name}</span>
+                  <span className="mt-1 block text-xs text-muted-foreground">View LinkedIn profile</span>
+                </span>
+                <ArrowUpRight className="size-4 shrink-0 text-primary" aria-hidden="true" />
+              </a>
+            )}
           </div>
         </div>
       </div>
