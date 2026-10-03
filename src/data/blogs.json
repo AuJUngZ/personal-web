@@ -10,7 +10,7 @@
       "coverImage": "/ai-workspace.png",
       "readingTime": "8 min read",
       "published": true,
-      "featured": false
+      "featured": true
     },
     {
       "slug": "from-devops-to-data-platform-engineer",
@@ -22,7 +22,7 @@
       "coverImage": "/devops-to-data-platform.png",
       "readingTime": "6 min read",
       "published": true,
-      "featured": true
+      "featured": false
     },
     {
       "slug": "mermaid-in-markdown",
