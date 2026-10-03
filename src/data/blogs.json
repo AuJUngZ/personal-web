@@ -1,6 +1,18 @@
 {
   "posts": [
     {
+      "slug": "my-ai-workspace",
+      "title": "AI Workspace ของผม: รวมงาน บริบท และความรู้ไว้ในที่เดียว",
+      "description": "แนวคิดการออกแบบ ai-workspace เป็นจุดเริ่มต้นของทุก session เก็บประวัติและผลงานใน sessions ให้ agent สะสมความรู้ใน wiki และใช้แผนที่บริบทนำทางไปยังโค้ดและ infrastructure ที่เกี่ยวข้อง",
+      "date": "2026-10-03",
+      "author": "Natthaphong Thepphithak",
+      "tags": ["AI", "AI Workspace", "Context Engineering", "Workflow"],
+      "coverImage": "/ai-workspace.png",
+      "readingTime": "8 min read",
+      "published": true,
+      "featured": false
+    },
+    {
       "slug": "from-devops-to-data-platform-engineer",
       "title": "จาก DevOps สู่ Data Platform Engineer: ต่อยอดพื้นฐานเดิม เปิดมุมมองใหม่",
       "description": "ประสบการณ์ย้ายจาก DevOps มาทำ Data Platform Engineer ที่ LINE MAN Wongnai ตั้งแต่การเรียนรู้ผ่านงานจริง การใช้ทักษะเดิม ไปจนถึงการเข้าใจผู้ใช้ข้อมูลและมองต่อไปถึง AI Platform",
