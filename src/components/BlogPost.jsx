@@ -72,10 +72,29 @@ export default function BlogPost() {
     });
   };
 
-  const handleCopyLink = () => {
-    navigator.clipboard.writeText(window.location.href);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+  const handleShare = async () => {
+    const url = new URL(`/blog/${post.slug}`, window.location.origin).href;
+
+    try {
+      if (typeof navigator.share === "function") {
+        await navigator.share({
+          title: post.title,
+          text: post.description,
+          url,
+        });
+        return;
+      }
+
+      await navigator.clipboard.writeText(url);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (error) {
+      if (error.name === "AbortError") {
+        return;
+      }
+
+      console.error("Error sharing blog post:", error);
+    }
   };
 
   if (!post) {
@@ -161,7 +180,7 @@ export default function BlogPost() {
           <Button
             variant="outline"
             size="sm"
-            onClick={handleCopyLink}
+            onClick={handleShare}
             className="gap-2"
           >
             {copied ? (
