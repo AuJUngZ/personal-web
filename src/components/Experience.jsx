@@ -55,7 +55,9 @@ export default function Experience({ data }) {
                         </time>
                       </div>
                       <p className="mt-1 break-words text-sm font-medium text-foreground/85">
-                        {job.company}
+                        <a href={job.companyUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-primary underline decoration-primary/40 underline-offset-4 hover:decoration-primary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+                          {job.company}<ArrowUpRight className="size-3.5 shrink-0" aria-hidden="true" /><span className="sr-only"> (opens in a new tab)</span>
+                        </a>
                       </p>
                       <p className="mt-1 inline-flex items-center gap-1.5 text-sm text-muted-foreground">
                         <MapPin className="size-3.5" aria-hidden="true" />
@@ -130,7 +132,9 @@ export default function Experience({ data }) {
                       {job.role}
                     </h3>
                     <p className="mt-1 text-base font-medium text-foreground/86">
-                      {job.company}
+                      <a href={job.companyUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-primary underline decoration-primary/40 underline-offset-4 hover:decoration-primary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+                        {job.company}<ArrowUpRight className="size-3.5 shrink-0" aria-hidden="true" /><span className="sr-only"> (opens in a new tab)</span>
+                      </a>
                     </p>
                   </header>
                   <p className="mt-5 max-w-3xl text-base leading-7 text-muted-foreground">
