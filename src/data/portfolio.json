@@ -130,6 +130,7 @@
       {
         "role": "Data Platform Engineer",
         "company": "LINE MAN Wongnai",
+        "companyUrl": "https://lmwn.com/",
         "location": "Bangkok, Thailand",
         "period": "Jun 2026 - Present",
         "summary": "Operating large-scale data platforms, resolving production incidents, and enhancing internal platform services.",
@@ -144,6 +145,7 @@
       {
         "role": "DevOps Engineer",
         "company": "SCB TechX CO., LTD.",
+        "companyUrl": "https://www.scbtechx.io/",
         "location": "Bangkok, Thailand",
         "period": "Jun 2025 - May 2026",
         "summary": "Supporting large-scale banking delivery with standardized pipelines and cloud infrastructure for production-critical systems.",
@@ -157,6 +159,7 @@
       {
         "role": "DevOps Consultant & Instructor",
         "company": "Freelance (Fastwork)",
+        "companyUrl": "https://fastwork.com/user/platform",
         "location": "Remote / Part-time",
         "period": "Jan 2025 - Present",
         "summary": "Helping software teams improve delivery maturity through consulting, training, and architecture guidance.",
@@ -170,6 +173,7 @@
       {
         "role": "DevOps & Full-Stack Developer",
         "company": "Chiang Mai University's Faculty of Engineering",
+        "companyUrl": "https://english.eng.cmu.ac.th/",
         "location": "Chiang Mai, Thailand",
         "period": "Aug 2023 - Mar 2025",
         "summary": "Delivered internal academic systems while bridging software engineering and DevOps responsibilities.",
@@ -183,6 +187,7 @@
       {
         "role": "DevOps Engineer (Cooperative Education)",
         "company": "SCB TechX CO., LTD.",
+        "companyUrl": "https://www.scbtechx.io/",
         "location": "Bangkok, Thailand",
         "period": "Jun 2024 - Oct 2024",
         "summary": "Worked inside a core banking environment with enterprise-grade cloud and automation constraints.",
@@ -196,6 +201,7 @@
       {
         "role": "Contract Full-Stack Developer",
         "company": "CMU PODD Centre",
+        "companyUrl": "https://podd.cmu.ac.th/",
         "location": "Chiang Mai, Thailand",
         "period": "Aug 2023 - Feb 2024",
         "summary": "Built a socially focused operations platform for volunteer coordination and field work.",
