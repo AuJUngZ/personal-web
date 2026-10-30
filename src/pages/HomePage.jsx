@@ -5,6 +5,7 @@ import RecommendedBlog from "@/components/RecommendedBlog";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
+import OpenSource from "@/components/OpenSource";
 import Credentials from "@/components/Credentials";
 import Contact from "@/components/Contact";
 
@@ -17,6 +18,7 @@ export default function HomePage() {
       />
       <QuickFacts items={portfolioData.hero.highlights} />
       <RecommendedBlog />
+      <OpenSource />
       <Experience data={portfolioData.experience} />
       <Skills data={portfolioData.skills} />
       <Projects data={portfolioData.projects} />
@@ -28,3 +30,5 @@ export default function HomePage() {
     </>
   );
 }
+
+
