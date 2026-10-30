@@ -3,8 +3,8 @@ import { ArrowRight, ArrowUpRight, Linkedin, MapPin } from "lucide-react";
 
 export default function Hero({ data, linkedin }) {
   return (
-    <section className="relative overflow-hidden py-14 md:py-24">
-      <div className="grid min-w-0 items-center gap-12 lg:grid-cols-[minmax(0,1fr)_22rem] lg:gap-16">
+    <section className="relative overflow-hidden py-10 sm:py-14 md:py-20">
+      <div className="grid min-w-0 items-center gap-8 sm:gap-12 lg:grid-cols-[minmax(0,1fr)_22rem] lg:gap-16">
         <div className="min-w-0 max-w-3xl">
           <p className="text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-primary sm:tracking-[0.28em]">
             {data.eyebrow}

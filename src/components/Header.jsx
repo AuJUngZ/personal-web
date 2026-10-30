@@ -103,13 +103,15 @@ export default function Header({ data }) {
           className="shrink-0 text-muted-foreground hover:bg-card lg:hidden"
           onClick={toggleMenu}
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isMenuOpen}
+          aria-controls="mobile-navigation"
         >
           {isMenuOpen ? <X className="size-6" /> : <Menu className="size-6" />}
         </Button>
       </div>
 
       {isMenuOpen && (
-        <div className="animate-in slide-in-from-top-2 duration-200 border-b border-border/60 bg-background fade-in lg:hidden">
+        <div id="mobile-navigation" className="animate-in slide-in-from-top-2 max-h-[calc(100dvh-4.5rem)] overflow-y-auto border-b border-border/60 bg-background duration-200 fade-in lg:hidden">
           <nav className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-4">
             {data.links.map((link) => renderNavLink(link, true))}
             <Link
