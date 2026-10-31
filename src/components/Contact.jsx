@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Contact({ data }) {
   return (
@@ -27,18 +27,6 @@ export default function Contact({ data }) {
                 >
                   <Mail className="size-4.5" />
                   Email Me
-                </a>
-              </Button>
-              <Button
-                asChild
-                variant="outline"
-                className="h-12 rounded-full border-border bg-background px-6 text-sm font-semibold text-foreground"
-              >
-                <a href={`tel:${data.phone.replace(/\s/g, "")}`}>
-                  <span className="flex items-center gap-2">
-                    <Phone className="size-4.5" />
-                    {data.phone}
-                  </span>
                 </a>
               </Button>
             </div>
